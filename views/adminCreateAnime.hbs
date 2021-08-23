@@ -1,0 +1,48 @@
+<a href="/admin/animes" class="btn btn-info">Volver a listado de animes</a>
+
+<div class="container contenedor">
+    <div class="row">
+        <form method="post" action="/admin/animes/create" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion">
+                </div>
+                <div class="mb-3">
+                    <label for="id_genero" class="form-label">Género</label>
+                    <select name="id_genero" id="id_genero" class="form.selector">
+                        {{#each genero}}
+                            <option value="{{id}}">{{nombre}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-light" href="/admin/animes/create/genero/1">Agregar género</a>
+                </div>
+                <div class="mb-3">
+                    <label for="id_emision" class="form-label">Estado</label>
+                    <select name="id_emision" id="id_emision" class="form.selector">
+                        {{#each emision}}
+                            <option value="{{id}}">{{nombre}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="id_dia" class="form-label">Día de transmisión</label>
+                    <select name="id_dia" id="id_dia" class="form.selector">
+                        {{#each dia}}
+                            <option value="{{id}}">{{nombre}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Agregar portada</label>
+                    <input type="file" class="form-control" name="imagen" id="imagen">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

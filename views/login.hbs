@@ -1,0 +1,21 @@
+<div class="container-fluid  contenedor" style="height: 100vh">
+    <div class="row justify-content-center login-margin">
+        <div class="col-4 bg-light">
+            <form method="post" action="/login">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Ingrese su nombre de usuario.">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contra" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="contra" id="contra" placeholder="Ingrese su contraseña.">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary ">Iniciar Sesión</button>
+                    </div>
+                    <a class="text-center" href="/registro"><p class="boton-registro">¿Aún no estás registrado? Registrate aquí</p></a>
+            </form>
+        </div>
+        <p class="text-center text-danger">{{message}}</p>
+    </div>
+</div>

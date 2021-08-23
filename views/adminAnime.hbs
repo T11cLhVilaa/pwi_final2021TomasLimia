@@ -1,0 +1,37 @@
+<a href="/admin" class="btn btn-info">Index</a>
+<a href="/admin/animes" class="btn btn-info">Volver a listado de animes</a>
+
+<div class="container-fluid contenedor ">
+    <div class="row m-3">
+        <!-- Relleno -->
+        <div class="col-1"></div>
+            <!-- Imagen Card -->
+            <div class="col-2">
+                <div class="bg-light text-black position-relative rounded mb-3" style="height: 370px; width: 260px">
+                    <img src="/images/{{anime.uid}}" class="card-img img-thumbnail  bg-light position-absolute top-50 start-50 translate-middle" style="height: 370px; width: 260px" alt="Portada {{anime.nombre}}">
+                </div>
+                <!-- "Emisión Card" -->
+                <div class="card color-verde position-relative pt-5" style="width: 260px;">
+                    <p class="text-uppercase position-absolute top-50 start-50 translate-middle" style="color: white; font-weight: bold;">{{anime.nombreEmision}}</p>
+                </div>
+            </div>
+            <!-- Releno -->
+            <div class="col-1" style="width: 50px;"></div>
+            <!-- Título -->
+            <div class="col-7">
+                <div>
+                    <h3 class="text-titulo-anime">{{anime.nombre}}</h3>
+                </div>
+                <!-- Descripción -->
+                <div class="card border border-light">
+                    <div class="card-body">
+                        <h5>Sinopsis</h5>
+                        <a href="#" class="btn btn-info rounded-pill color-boton-anime border border-white">{{anime.nombreGenero}}</a>
+                        <p class="parrafo-anime">{{anime.descripcion}}</p>
+                    </div>
+                </div>
+                <button class="btn btn-success"><a href="/admin/animes/update/{{anime.id}}"><i class="fas fa-pen boton"></i></a></button>
+                <button class="btn btn-danger"><a href="/admin/animes/delete/{{anime.id}}"><i class="fas fa-trash boton"></i></a></button>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<a href="/admin" class="btn btn-info">Index</a>
+
+<div class="container contenedor">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">¿Admin? (1: Sí / 0: No)</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+            </thead>
+                <tbody>
+                            {{#each usuarios}}
+                            <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>{{username}}</td>
+                            <td>{{mail}}</td>
+                            <td>{{admin}}</td>
+                            <td><button class="btn btn-success"><a href="/admin/usuarios/update/{{id}}"><i class="fas fa-pen boton"></i></a></button></td>
+                            <td><button class="btn btn-danger"><a href="/admin/usuarios/delete/{{id}}"><i class="fas fa-trash boton"></i></a></button></td>
+                            </tr>
+                    {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

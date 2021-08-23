@@ -1,0 +1,39 @@
+<a href="/admin" class="btn btn-info">Index</a>
+<a href="/admin/animes/create" class="btn btn-info">Agregar anime</a>
+
+<div class="container contenedor">
+    <div class="row">
+        <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Portada</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Día de transmisión</th>
+            <th scope="col">Género</th>
+            <th scope="col">Emisión</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            </tr>
+    </thead>
+        <tbody>
+                    {{#each animes}}
+                    <tr>
+                    <th scope="row">{{id}}</th>
+                    <td><img src="/images/{{uid}}" alt="No hay imagen" style="height: 100px;"></td>
+                    <td>{{nombre}}</td>
+                    <td>{{descripcion}}</td>
+                    <td>{{nombreDia}}</td>
+                    <td>{{nombreGenero}}</td>
+                    <td>{{nombreEmision}}</td>
+                    <td><a href="/admin/animes/single/{{id}}">Ver más</a></td>
+                    <td><button class="btn btn-success"><a href="/admin/animes/update/{{id}}"><i class="fas fa-pen boton"></i></a></button></td>
+                    <td><button class="btn btn-danger"><a href="/admin/animes/delete/{{id}}"><i class="fas fa-trash boton"></i></a></button></td>
+            </tr>
+            {{/each}}
+    </tbody>
+</table>
+    </div>
+</div>

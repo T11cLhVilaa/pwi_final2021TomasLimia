@@ -1,0 +1,49 @@
+<div class="container contenedor">
+    <div class="row">
+        <form method="post" action="/admin/animes/update/{{anime.id}}" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" value="{{anime.nombre}}">
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" value="{{anime.descripcion}}">
+                </div>
+                <div class="mb-3">
+                    <label for="id_genero" class="form-label">Género</label>
+                    <select name="id_genero" id="id_genero" class="form.selector">
+                        <option value="{{anime.id_genero}}">Volvé a poner: {{anime.nombreGenero}}</option>
+                        {{#each genero}}
+                            <option value="{{id}}">{{nombre}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <a class="btn btn-light" href="/admin/animes/create/genero/2">Agregar género</a>
+                </div>
+                <div class="mb-3">
+                    <label for="id_emision" class="form-label">Estado</label>
+                    <select name="id_emision" id="id_emision" class="form.selector">
+                        <option value="{{anime.id_emision}}">Volvé a poner: {{anime.nombreEmision}}</option>
+                            {{#each emision}}
+                                <option value="{{id}}">{{nombre}}</option>
+                            {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="id_dia" class="form-label">Día de transmisión</label>
+                    <select name="id_dia" id="id_dia" class="form.selector">
+                        <option value="{{anime.id_dia}}">Volvé a poner: {{anime.nombreDia}}</option>
+                            {{#each dia}}
+                                <option value="{{id}}">{{nombre}}</option>
+                            {{/each}}
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Agregar portada</label>
+                    <input type="file" class="form-control" name="imagen" id="imagen">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

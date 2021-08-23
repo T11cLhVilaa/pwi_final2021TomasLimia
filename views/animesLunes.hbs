@@ -1,0 +1,11 @@
+<div class="container-fluid contenedor">
+    {{#each animes}}
+    <div class="row d-inline-flex justify-content-evenly m-3" style="width: 200px; height: 420px;">
+            <div class="bg-light text-black position-relative rounded" style="height: 300px; width: 200px">
+                <a href="/animes/single/{{id}}"><img src="/images/{{uid}}" class="card-img img-thumbnail border border-dark bg-light position-absolute top-50 start-50 translate-middle" style="height: 300px; width: 200px" alt="Portada {{nombre}}"></a>
+            </div>
+            <h5 class="card-title text-center">{{nombre}}</h5>
+    </div>
+    {{/each}}
+</div>
+

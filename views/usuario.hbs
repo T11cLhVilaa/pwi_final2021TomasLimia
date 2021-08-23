@@ -1,0 +1,18 @@
+<div class="container contenedor">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 contenedor-usuario" style="height: 100vh;">
+          <div class="perfil-usuario">
+            <p class="text-center">Foto de perfil</p>
+          </div>
+          <div class="text-center">
+            <p class="texto-inline-block">{{usuario.username}}</p>
+            <a href="/usuarios/update/{{usuario.confirmacionCorreo}}" class="color-ruedita"><i class="fas fa-cog"></i></a>
+          </div>
+          <div class="text-center">
+            <p class="texto-usuario-mail texto-inline-block">{{usuario.mail}}</p>
+          </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

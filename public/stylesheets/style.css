@@ -1,0 +1,140 @@
+.boton {
+    color: white !important;
+}
+li {
+    list-style-type: none;
+}
+body{
+    background-color: #f8f9fa !important;
+}
+
+/* Navbar y Footer */
+.contenedor{
+    min-height: calc(100vh - 56px);
+}
+
+/* Navbar */
+.color-navbar {
+    background-color: #2f353a !important;
+}
+.text-navbar{
+    color: #2f353a !important; /* Para los puntitos al lado del ícono de perfil */
+}
+.text-nav{
+    color: #96999c !important; /* Para el resto de texto */
+}
+.text-nav:hover{
+    color: white !important;
+}
+.text-icono {
+    color: #22defa
+}
+
+/* Footer */
+.color-footer{
+    background-color: #2f353a !important;
+}
+.text-footer, .text-footer-tittle{
+    color: #96999c !important;
+}
+.text-footer:hover{
+    color: white !important;
+}
+
+/* Carousel Index */
+.carousel-1-middle{
+    top: 35%;
+}
+.color-borde1{
+    font-size: 50px;
+    color: white !important;
+    -webkit-text-stroke: 2px black;
+    -moz-text-stroke: 2px black;
+    font-family: 'Aclonica', sans-serif;
+}
+.color-borde2{
+    font-size: 30px;
+    color: white !important;
+    -webkit-text-stroke: 1.5px black;
+    -moz-text-stroke: 1.5px black;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.carousel-margin{
+    margin-top: 50px !important;
+}
+
+/* Anime Individual */
+.color-verde{
+    background-color: #00b74c !important;
+}
+.color-boton-anime{
+    background-color: #e5f8fe !important;
+    color: #0fc0f2 !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    margin: 10px 0 10px 0;
+}
+.color-boton-anime:hover{
+    color: #e5f8fe !important;
+    background-color: #0fc0f2 !important;
+}
+.parrafo-anime{
+    color: #96999c !important;
+    font-size: 13px !important;
+}
+.text-titulo-anime{
+    font-size: 50px !important;
+    font-weight: bold;
+    color: white !important;
+    -webkit-text-stroke: 1.5px black;
+    -moz-text-stroke: 1.5px black;
+}
+
+/* Login y Registro*/
+.login-margin, .registro-margin {
+    margin-top: 150px !important;
+}
+.boton-registro, .boton-login{
+    margin-top: 20px !important;
+}
+
+/* Usuario */
+.texto-usuario-mail{
+    color: #f8f9fa !important;
+}
+.texto-usuario-mail:hover{
+    color: black !important;
+}
+.color-ruedita{
+    color: #91a589 !important;
+}
+.color-ruedita:hover{
+    color: black !important;
+}
+.contenedor-usuario{
+    margin-top: 220px !important;
+}
+.texto-inline-block {
+    display: inline-block !important;
+}
+.perfil-usuario{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white !important;
+    margin-left: 100px !important;
+    padding-top: 80px !important;
+}
+
+/* Index Admin */
+.botones-admin{
+    margin-top: 50px !important
+}
+
+/* Desautorizado */
+.contenedor-des {
+    margin-top: 170px !important;
+}
+.parrafo-des{
+    margin: 40px 0 !important;
+}
